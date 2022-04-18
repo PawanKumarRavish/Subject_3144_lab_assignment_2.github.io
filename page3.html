@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/content.css">
+    <title>Site Making</title>
+</head>
+
+<body>
+    <header>
+        <h2>3</h2>
+        <h1>India</h1>
+        <nav>
+            <div class="topnav" id="myTopnav">
+                <a href="index.html" class="active">Home</a>
+                <a href="#news">Get Brochure</a>
+                <a href="#contact">Special Offers</a>
+                <a href="#about">Join our Email List</a>
+                <a href="#about">Contact Us</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+
+        </nav>
+    </header>
+    <div class="section">
+        <aside>
+            <div class="upper">
+                <h2>Additional Resources</h2>
+
+                <ul>
+                    <a href="audio/india.mp3">
+                        <li><u>Audio Tour</u></li>
+                    </a>
+                    <a
+                        href="https://k12database.unc.edu/wp-content/uploads/sites/31/2017/11/IndiasCultureDiversity.pdf">
+                        <li><u>Display Map</u></li>
+                    </a>
+                </ul>
+            </div>
+            <div class="lower">
+                <h2>Other Rome sites</h2>
+                <ul>
+                    <a href="#">
+                        <li><u>The India Gate</u></li>
+                    </a>
+                    <a href="#">
+                        <li><u>The Aksharadhama Temple</u></li>
+                    </a>
+                    <a href="#">
+                        <li><u>Jama Masjid</u></li>
+                    </a>
+                    <a href="#">
+                        <li><u>Qutub Minar</u></li>
+                    </a>
+                    <a href="#">
+                        <li><u>The Lotus Temple</u></li>
+                    </a>
+                </ul>
+
+            </div>
+        </aside>
+        <div id="content">
+            <h2>Italy : A land of Art and history</h2>
+            <div class="slideshow">
+                <div class="image-section">
+                    <img src="./pic/indiaGate.jpeg" width="100%" alt="">
+                    <img src="./pic/jamamasjid.webp" width="100%" alt="">
+                    <img src="./pic/jantarmantar.jpeg" width="100%" alt="">
+                    <div class="button-section">
+                        <button onclick="slide(1)">1</button>
+                        <button onclick="slide(2)">2</button>
+                        <button onclick="slide(3)">3</button>
+                    </div>
+                </div>
+                <p>This 73-meter high tower was built by Qutub-ud-Din Aibak
+                    in the year 1193. Built after the defeat of Delhi’s
+                    last Hindu ruler, the Qutub Minar was constructed to
+                    celebrate the Muslim supremacy in Delhi.
+                    It is the highest tower in India, with five
+                    levels and projecting balconies. The first three
+                    levels are made up of red sandstone and the last
+                    two of marble and sandstone.
+                </p>
+                <p>
+                    The Qutub Minar has three different types of architectural
+                    styles. The construction of the minar was started by Aibak
+                    (who only made the basement). Later, Iltutmish added on
+                    three stories and then it was completed by Firoz Shah
+                    Tuglak, who constructed the last two stories.
+                    Quwwat-us-Islam Mosque, the first mosque ever to be built
+                    in India, is situated here.</p>
+
+
+                <section>
+                    <p>
+                        Delhi is a city with an impressive and remarkable
+                        history. Standing as a witness to this interesting
+                        bygone era are the various monuments of Delhi. From
+                        the Old Fort to the Tughlaqabad area to the
+                        various tombs in the city, each one represents
+                        a separate period in the history of Delhi.</p>
+                    <p>
+                        In the area of New Delhi, historical monuments
+                        cover mostly those that were built during the
+                        time of the British like the Parliament House,
+                        President's House, the India Gate etc.
+
+                        However, one thing that is common in all the monuments of
+                        Delhi is their architectural excellence. Be it the Red Fort
+                        built by Shah Jahan or the Parliament House designed by Edwin
+                        Lutyens,</p>
+                    <p> each and every monument has an architectural beauty
+                        that leaves you mesmerized. All said and done, the
+                        magnificence of Delhi monuments cannot be fully described
+                        and you will have to visit them to really appreciate them
+                    </p>
+                </section>
+
+            </div>
+        </div>
+    </div>
+    <footer>
+        &copy; Copyrights 2022 -- Pawan Kumar C0835049
+    </footer>
+
+
+    <script>
+        function slide(num) {
+            let images = document.querySelectorAll("img");
+            if (num === 1) {
+                images[0].style.display = "block";
+                images[1].style.display = "none";
+                images[2].style.display = "none";
+            } else if (num === 2) {
+                images[0].style.display = "none";
+                images[1].style.display = "block";
+                images[2].style.display = "none";
+            } else {
+                images[0].style.display = "none";
+                images[1].style.display = "none";
+                images[2].style.display = "block";
+            }
+        }
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>
